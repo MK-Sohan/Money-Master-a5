@@ -1,15 +1,3 @@
- function gettheinputbox (boxname){
-     const inputbox = document.getElementById(boxname);
-    const inputboxvalue = parseInt(inputbox.value);
-    inputbox.value='';
-    return inputboxvalue;
-    
- }
-
-
-
-
-
 document.getElementById('calculate-button').addEventListener('click',function(){
 //  console.log('click');
     const incomeinputbox= document.getElementById('income-box');
