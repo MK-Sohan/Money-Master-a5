@@ -93,7 +93,7 @@ body {
   text-align: center;
   margin-top: 20px;
 }
-/* for the test -----------------------*/
+
 .wrapper {
   max-width: 500px;
   width: 100%;
@@ -111,10 +111,6 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-
-/* .wrapper .form {
-  width: 100%;
-} */
 
 .wrapper .form .inputfield {
   margin-bottom: 15px;
@@ -134,34 +130,77 @@ body {
   border: none;
   border-radius: 8px;
 }
-/* test end----------------------------- */
 
 /*--------
  media quaries
 --------------- */
 /* for mobile devices */
-@media only screen and (max-width: 688px) {
+
+@media only screen and (max-width: 480px) {
   .main {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .for-math {
-    /* width: 60%; */
-    background-color: antiquewhite;
-
-    height: 800px;
-  }
 
   .for-image img {
-    width: 500px;
-    height: 550px;
+    width: 380px;
+    height: 450px;
   }
   .container h1 {
     color: #051c1d;
   }
   .container {
-    width: 68%;
-    background-color: #696486;
+    width: 210px;
+  }
+  .wrapper {
+    width: 330px;
+    height: 700px;
+    background: antiquewhite;
+  }
+
+  .wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #181304;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .wrapper .form .inputfield {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper .form .inputfield label {
+    width: 50px;
+    color: #160404;
+    font-weight: 700;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .btn {
+    background-color: #59a5ff;
+    color: aliceblue;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+
+    margin-left: 100px;
+  }
+  .savings {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
   }
 }
