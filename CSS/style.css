@@ -151,10 +151,10 @@ body {
     color: #051c1d;
   }
   .container {
-    width: 210px;
+    width: 180px;
   }
   .wrapper {
-    width: 330px;
+    width: 310px;
     height: 700px;
     background: antiquewhite;
   }
@@ -178,7 +178,8 @@ body {
     width: 50px;
     color: #160404;
     font-weight: 700;
-    margin-left: 20px;
+    margin-left: 1px;
+    margin-right: 25px;
     font-size: 18px;
   }
   .input {
