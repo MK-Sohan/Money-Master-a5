@@ -86,7 +86,7 @@ else if(saveboxvalue>0){
 }
 
 
-
+savebox.value='';
 
 })
 
