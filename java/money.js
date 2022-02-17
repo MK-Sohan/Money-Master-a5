@@ -36,7 +36,9 @@ clothsinputbox.value='';
 if(convertincomeinputvalue<0 || convertfoodinputvalue<0 || convertrentinputvalue<0 || convertclothsinputvalue<0 ){
     alert("Give a positive number")
 }
-else{
+
+
+
     const expensessum = convertfoodinputvalue+convertrentinputvalue+convertclothsinputvalue;
 
 
@@ -45,7 +47,7 @@ else{
     totalexpenses.innerText= expensessum;
     const totalbalance = document.getElementById('total-balance');
     totalbalance.innerText=totalsum;
-}
+
 
 
 })
@@ -74,8 +76,7 @@ if(saveboxvalue<0){
 
 const convertpar = saveboxvalue/100;
 const converttotalbalance = totalbalancetext*convertpar;
-console.log(totalbalancetext);
-console.log(converttotalbalance);
+
 
 if(totalbalancetext<=converttotalbalance){
 alert('Your saving is more then balance');
