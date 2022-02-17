@@ -40,14 +40,22 @@ if(convertincomeinputvalue<0 || convertfoodinputvalue<0 || convertrentinputvalue
 
 
     const expensessum = convertfoodinputvalue+convertrentinputvalue+convertclothsinputvalue;
-
+    if (expensessum>convertincomeinputvalue){
+        alert('your expence is more then your income');
+       
+    }
 
     const totalsum = convertincomeinputvalue-expensessum;
+   
     const totalexpenses=document.getElementById('total-expenses');
-    totalexpenses.innerText= expensessum;
-    const totalbalance = document.getElementById('total-balance');
-    totalbalance.innerText=totalsum;
-
+    if(expensessum<=convertincomeinputvalue ){
+        totalexpenses.innerText= expensessum;
+        const totalbalance = document.getElementById('total-balance');
+        totalbalance.innerText=totalsum;
+    
+    }
+    
+   
 
 
 })
@@ -61,17 +69,16 @@ document.getElementById('save-button').addEventListener('click',function(){
     
 
     const totalbalance = document.getElementById('total-balance');
-
-const totalbalancetext = parseFloat(totalbalance.innerText);
-// console.log(totalbalancetext);
+    const totalbalancetext = parseFloat(totalbalance.innerText);
 
 
-const savebox=document.getElementById('save-box');
-const saveboxvalue = parseFloat(savebox.value) ;
-if(saveboxvalue<0){
+
+    const savebox=document.getElementById('save-box');
+    const saveboxvalue = parseFloat(savebox.value) ;
+    if(saveboxvalue<0){
   
-    alert('Negative value not allow')
-}
+          alert('Negative value not allow')
+    }
 
 
 const convertpar = saveboxvalue/100;
@@ -82,7 +89,7 @@ if(totalbalancetext<=converttotalbalance){
 alert('Your saving is more then balance');
 
 }
-else{
+else if(saveboxvalue>0){
     
     savingammount.innerText= converttotalbalance;
     
