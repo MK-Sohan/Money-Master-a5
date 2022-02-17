@@ -144,17 +144,17 @@ body {
   }
 
   .for-image img {
-    width: 350px;
+    width: 340px;
     height: 450px;
   }
   .container h1 {
     color: #051c1d;
   }
   .container {
-    width: 170px;
+    width: 150px;
   }
   .wrapper {
-    width: 290px;
+    width: 280px;
     height: 700px;
     background: antiquewhite;
   }
@@ -178,7 +178,7 @@ body {
     width: 50px;
     color: #160404;
     font-weight: 700;
-    margin-left: 1px;
+    margin-left: -10px;
     margin-right: 25px;
     font-size: 18px;
   }
